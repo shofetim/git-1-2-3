@@ -1,0 +1,34 @@
+* Git 1 2 3!
+  A fast pro introduction to the git scm tool.
+
+  This repository is the presentation source, including the files needed to
+  generate the slides, and is also the hands on demo repository.
+
+  1) Get git!
+     http://git-scm.com/
+     Its available for Linux/Mac/Windows
+
+  2) Get started!
+     Clone this repository, view the presentation, play with it.
+     Git clone https://shofetim@github.com/shofetim/git-1-2-3.git
+
+  3) Go!
+     Please fork this repo, improve the presentation, and tell other developers
+     about it.
+
+** Building / Contributing
+   The slides are in Racket Slideshow format:
+   http://docs.racket-lang.org/slideshow/index.html 
+
+   (Racket is a dialect of lisp, and despite the odd name is a very powerful and
+   flexible language)
+
+   You will need to install racket, and add it to your path, then to view the
+   slides:
+   #+BEGIN_SRC bash
+   slideshow presentation.rkt
+   #+END_SRC
+   or to create a PDF version of the presentation
+   #+BEGIN_SRC bash
+   slideshow --print presentation.rkt
+   #+END_SRC
