@@ -1,0 +1,187 @@
+* Git
+** Git History
+   - Git was written by Linus Torvalds 
+   - Quoting Linus: "I'm an egotistical ***, and I name all my projects after
+     myself. First 'Linux', now 'git'".
+   - Written in about two weeks, with almost no UI of any kind. Built for and
+     used by kernel hackers
+   - Git has pretty much taken the open source version control world by storm.
+** Whats Git good for?
+   - Linus doesn't call git a "Version Control System" he calls it a "Source
+     Code Management" tool
+   - Source code could be anything, 
+     but if its some form of text then you can have more fund
+** Kinds of source code that I use git for
+   - Ordinary source code PHP/SQL/HTML/CSS/Javascript/Lisp etc. etc.
+   - Ledger https://github.com/jwiegley/ledger
+   - Emacs Org-mode http://orgmode.org/
+     - Appointments
+     - Notes
+     - Project management 
+     - Time log(s)
+     - Passwords
+     - Project Proposals
+     - Research papers
+     - Code documentation
+     - etc etc
+   - Calendar http://www.roaringpenguin.com/products/remind
+   - Diagrams http://ditaa.sourceforge.net/
+** "Other" things people use git for
+   - /etc/
+   - /home/
+   - An automatic writer's history http://bitbucketlabs.net/flashbake/ (Cory Doctorow)
+   - Debugging
+   - Security
+   - File syncing http://www.sparkleshare.org/
+   - a long list of crazy things
+** What does git DO?
+   - Efficient sharing of code.
+     - Managed 
+     - Easy tools (github, gitosis etc)
+     - Minimal network activity
+   - "Trustworthiness"/reliability that your stuff hasn't changed
+   - Point In Time Architecture ie, history
+   - "Fluff"
+     - Cool tools to do everything, reporting, automatic actions, cool graphics etc.
+** Where to get it?
+   - Git http://git-scm.com/
+     - Linux
+     - Mac
+     - Windows
+** How it works
+   - diff & patch
+   - sha1
+   - working directory | index | repository
+     3-parts.png
+
+** Fun time
+   Try it out...
+** Commands
+   git-init
+   Create an empty git repository or reinitialize an existing one.
+
+   git-clone
+   Clone a repository into a new directory.
+
+   git-add
+   Add file contents to the index.
+
+   git-commit
+   Record changes to the repository.
+
+   git-diff
+   Show changes between commits, commit and working tree, etc.
+
+   git-log
+   Show commit logs.
+
+   git-reset
+   Reset current HEAD to the specified state.
+
+   git-status
+   Show the working tree status.
+
+   git-show
+   Show various types of objects.
+
+   git-stash
+   Stash the changes in a dirty working directory away.
+
+   git-pull
+   Fetch from and merge with another repository or a local branch.
+
+   git-push
+   Update remote refs along with associated objects.
+
+   git-fetch
+   Download objects and refs from another repository.
+
+   git-branch
+   List, create, or delete branches.
+
+   git-checkout
+   Checkout a branch or paths to the working tree.
+
+   git-rm
+   Remove files from the working tree and from the index.
+
+   git-tag
+   Create, list, delete or verify a tag object signed with GPG.
+
+   gitk
+   The git repository browser.
+
+   git-config
+   Get and set repository or global options.
+
+   git-remote
+   manage set of tracked repositories.
+
+   git-grep
+   Print lines matching a pattern.
+
+   git-gui
+   A portable graphical interface to Git.
+
+   git-clean
+   Remove untracked files from the working tree.
+
+   git-fsck
+   Verifies the connectivity and validity of the objects in the database.
+
+   git-gc
+   Cleanup unnecessary files and optimize the local repository.
+
+   git-prune
+   Prune all unreachable objects from the object database.
+
+   git-merge
+   Join two or more development histories together.
+
+   --- more advanced commands ---
+
+   git-rebase
+   Forward-port local commits to the updated upstream head.
+
+   git-cherry-pick
+   Apply the changes introduced by some existing commits.
+
+   git-bisect
+   Find by binary search the change that introduced a bug.
+
+   git-format-patch
+   Prepare patches for e-mail submission.
+
+   git-am
+   Apply a series of patches from a mailbox.
+
+   git-blame
+   Show what revision and author last modified each line of a file.
+
+   git-archive
+   Create an archive of files from a named tree.
+
+   git-mv
+   Move or rename a file, a directory, or a symlink.
+
+   git-revert
+   Revert some existing commits.
+
+   git-shortlog
+   Summarize git log output.
+
+   .... There are lots more
+
+** Gotcha's
+   - Git tracks content, not files. 
+   - .gitignore
+   - git push (it does the right thing but)
+   - making commits as root
+   - chmoding the hooks when you didn't mean too...
+   - file permission and meta data tracking
+** Tools 
+   - Github https://github.com/
+   - Deploy HQ http://www.deployhq.com/
+   - Gource http://code.google.com/p/gource/
+   - Gitosis http://scie.nti.st/2007/11/14/hosting-git-repositories-the-easy-and-secure-way
+     
