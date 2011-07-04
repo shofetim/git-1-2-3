@@ -54,8 +54,34 @@
 
 (slide
  #:title "What is Git good for?"
- (para "Git is a " (bit "Source Code Management") "system, not a version control system."
-       (plus "")))
+ #:layout 'top
+ (para "Git is a " (bit "Source Code Management") "system, not a version control system.")
+ 'next
+ (plus "Efficient Sharing")
+ 'next
+ (plus "Code Review")
+ 'next
+ (plus "Documentation")
+ 'next
+ (plus "Security / Integrity")
+ 'next
+ (plus "Versioning")
+ 'next
+ (plus "Debugging")
+ 'next
+ (plus "A simple continuous integration server")
+ 'next
+ (plus "more cool tools"))
+
+(slide
+ (para #:align 'center
+       "The single most important thing you get is that:"
+       (colorize (bit "Experimentation Is Inexpensive") "green")))
+(slide
+ (para #:align 'center
+  "Stop pussyfooting around your codebase... and start striding around like a giant"))
+
+
 
 (slide
  #:title "Kinds of source code that I use git for"
@@ -84,16 +110,6 @@
  (item "File syncing http://www.sparkleshare.org/")
  (item "a long list of crazy things"))
 
-(slide
- #:title "What does git Do?"
- (item "Efficient sharing of code.")
- (subitem "Managed ")
- (subitem "Easy tools (github, gitosis etc)")
- (subitem "Minimal network activity")
- (item "Trustworthiness/reliability that your stuff hasn't changed")
- (item "Point In Time Architecture ie, history")
- (item "\"Fluff\"")
- (subitem "Cool tools to do everything, reporting, automatic actions, cool graphics etc."))
 
 (slide
  #:title "Where to get it?"
