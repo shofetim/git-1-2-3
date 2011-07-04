@@ -54,12 +54,12 @@
  (item "a long list of crazy things"))
 
 (slide
- #: title "What does git Do?"
+ #:title "What does git Do?"
  (item "Efficient sharing of code.")
  (subitem "Managed ")
  (subitem "Easy tools (github, gitosis etc)")
  (subitem "Minimal network activity")
- (item ""Trustworthiness"/reliability that your stuff hasn't changed")
+ (item "Trustworthiness/reliability that your stuff hasn't changed")
  (item "Point In Time Architecture ie, history")
  (item "\"Fluff\"")
  (subitem "Cool tools to do everything, reporting, automatic actions, cool graphics etc."))
@@ -76,7 +76,7 @@
  (item "diff & patch")
  (item "sha1")
  (item "working directory | index | repository")
- 3-parts.png)
+ (bitmap "./images/3-areas.png"))
 
 (slide
  #:title "Fun time"
