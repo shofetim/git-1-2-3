@@ -1,30 +1,61 @@
 #lang slideshow
 (require slideshow)
 
+(define (plus . str)
+  (item #:bullet (colorize (tt "+") "green")
+        str))
+
 (slide
- #:title "Welcome"
- (para "This is a fast, pro introduction to git."
-       "You can fork this presentation at:")
+ #:title "Git 1 2 3!"
  (para #:align 'center
+       "A fast introduction to git for professionals")
+ (blank)
+ (para  #:align 'center
+        "Jordan Schatz" 
+        (text "jordan@noionlabs.com" '(bold . modern) 25))
+ (blank)
+ (para #:align 'center
+       "You can fork this presentation at:"
        "https://github.com/shofetim/git-1-2-3")
- (para "Git is a large tool, so if there is something that interests"
-       "you that we don't cover, please ask"))
+ (blank)
+ (bitmap "./images/git.png"))
 
 (slide
- #:title "Git History"
- (item "Git was written by Linus Torvalds")
- (item "Quoting Linus: \"I'm an egotistical ***, and I name all my projects" 
-       "after myself. First 'Linux', now 'git'\"")
- (item "Written in about two weeks, with almost no UI of any kind. Built for and"
-       "used by kernel hackers")
- (item "Git has pretty much taken the open source version control world by storm."))
+ #:title "What is Git?"
+ #:layout 'top
+ (para
+  "Git is:"
+  (plus
+        "a" (bit "source code management") "tool")
+  (plus
+        "distributed")
+  (plus
+        "fast")))
 
 (slide
- #:title "Whats Git good for?"
- (item "Linus doesn't call git a \"Version Control System\" he calls it a \"Source"
-       "Code Management\" tool")
- (item "Source code could be anything, but if its some form of text then you can have"
-       "more fun"))
+ #:title "What is Git?"
+ (para "Linus Torvolds wrote Git to solve a problem"
+       (item "All existing version control systems where broken")
+       (item "There where about 30,000 developers working on the kernel which"
+             "made other VCS painful to use ")
+       (item "He needed something that made his work faster")))
+
+(slide
+ (para #:align 'center
+       "Solution: Git"))
+
+(slide
+ #:title "Quick Note"
+ (para "Why the name 'git' ? ")
+ (blank)
+ (para
+  "Quoting Linus: \"I'm an egotistical ***, and I name all my projects" 
+  "after myself. First 'Linux', now 'git'\""))
+
+(slide
+ #:title "What is Git good for?"
+ (para "Git is a " (bit "Source Code Management") "system, not a version control system."
+       (plus "")))
 
 (slide
  #:title "Kinds of source code that I use git for"
