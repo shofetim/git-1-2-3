@@ -21,6 +21,9 @@
  (bitmap "./images/git.png"))
 
 (slide
+ (t "1: What is Git?"))
+
+(slide
  #:title "What is Git?"
  #:layout 'top
  (para
@@ -55,7 +58,9 @@
 (slide
  #:title "What is Git good for?"
  #:layout 'top
- (para "Git is a " (bit "Source Code Management") "system, not a version control system.")
+ (para "Git is a " 
+       (bit "Source Code Management") 
+       "system, not a version control system.")
  'next
  (plus "Efficient Sharing")
  'next
@@ -81,42 +86,52 @@
  (para #:align 'center
   "Stop pussyfooting around your codebase... and start striding around like a giant"))
 
-
+(slide
+ #:title "Aside"
+ (para "You don't have to just use git for source code"))
 
 (slide
- #:title "Kinds of source code that I use git for"
- (item "Ordinary source code PHP/SQL/HTML/CSS/Javascript/Lisp etc. etc.")
- (item "Ledger https://github.com/jwiegley/ledger")
- (item "Emacs Org mode http://orgmode.org/")
- (subitem "Appointments")
- (subitem "Notes")
- (subitem "Project management ")
- (subitem "Time log(s)")
- (subitem "Passwords")
- (subitem "Project Proposals")
- (subitem "Research papers")
- (subitem "Code documentation")
- (subitem "etc etc")
- (item "Calendar http://www.roaringpenguin.com/products/remind")
- (item "Diagrams http://ditaa.sourceforge.net/"))
+ #:title "Types of code that I use git for:"
+ 'alts
+ (list
+  (list
+   (item "Ledger https://github.com/jwiegley/ledger"))
+  (list
+   (item "Emacs Org mode http://orgmode.org/")
+   (subitem "Appointments")
+   (subitem "Notes")
+   (subitem "Project management ")
+   (subitem "Time log(s)")
+   (subitem "Passwords")
+   (subitem "Project Proposals")
+   (subitem "Research papers")
+   (subitem "Code documentation"))
+  (list
+   (item "Calendar http://www.roaringpenguin.com/products/remind"))
+  (list
+   (item "Diagrams http://ditaa.sourceforge.net/"))
+  (list
+   (item "Presentations http://docs.racket-lang.org/slideshow/index.html"))
+  (list
+   (item "Just about everything else too"))))
 
 (slide
- #:title "Other things people use git for"
- (item "/etc/")
- (item "/home/")
- (item "An automatic writer's history http://bitbucketlabs.net/flashbake/ (Cory Doctorow)")
- (item "Debugging")
- (item "Security")
- (item "File syncing http://www.sparkleshare.org/")
- (item "a long list of crazy things"))
-
+ (t "2: Get Git"))
 
 (slide
  #:title "Where to get it?"
- (item "Git http://git-scm.com/")
- (item "Linux")
- (item "Mac")
- (item "Windows"))
+ (t "Git http://git-scm.com/")
+ (hc-append 20
+  (t "Linux")
+  (bitmap "./images/tux.png"))
+ (blank)
+ (hc-append 20
+  (t "Mac")
+  (bitmap "./images/osx.png"))
+ (blank)
+ (hc-append 20
+  (t "Windows")
+  (bitmap "./images/windows.png")))
 
 (slide
  #:title "How it works"
@@ -125,9 +140,9 @@
  (item "working directory | index | repository")
  (bitmap "./images/3-areas.png"))
 
+
 (slide
- #:title "Fun time"
- (item "Try it out..."))
+ (t "3: Try it out"))
 
 (slide
  #:title "git-init"
@@ -318,23 +333,22 @@
  (para (tt "git-shortlog")
        "Summarize git log output."))
 
-(slide   
- #:title ".... There are lots more"
- (para ".... There are lots more"))
+(slide
+ (t "Addendum"))
 
 (slide
  #:title "Gotcha's"
  (item "Git tracks content, not files. ")
  (item ".gitignore")
  (item "git push (it does the right thing but)")
- (item "making commits as root")
- (item "chmoding the hooks when you didn't mean too...")
- (item "file permission and meta data tracking"))
+ (item "making commits/checkouts as root")
+ (item "chmod'ing the hooks when you didn't mean too..."))
 
 (slide
  #:title "Tools "
  (item "Github https://github.com/")
  (item "Deploy HQ http://www.deployhq.com/")
  (item "Gource http://code.google.com/p/gource/")
- (item "Gitosis http://scie.nti.st/2007/11/14/hosting-git-repositories-the-easy-and-secure-way"))
-
+ (item "Gitosis")
+ (para "http://scie.nti.st/2007/11/14/"
+       "hosting-git-repositories-the-easy-and-secure-way"))
