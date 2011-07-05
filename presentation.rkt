@@ -157,22 +157,25 @@
  #:title "Git Commands"
  #:layout 'top
  (para
-  (tt "git-init")
+  (tt "git config")
+  (blank)
+  (t "Get and set repository or global options."))
+ (para
+  (text "git config --global user.name \"Jordan Schatz\"" '(bold . modern) 25)
+  (text "git config --global user.email \"jordan@noionlabs.com\"" '(bold . modern) 25)))
+
+(slide
+ #:title "Git Commands"
+ #:layout 'top
+ (para
+  (tt "git init")
   (para "Create an empty git repository.")))
 
 (slide
  #:title "Git Commands"
  #:layout 'top
  (para
-  (tt "git-clone")
-  (blank)
-  (t "Clone a repository into a new directory.")))
-
-(slide
- #:title "Git Commands"
- #:layout 'top
- (para
-  (tt "git-add")
+  (tt "git add")
   (blank)
   (t "Add file contents to the index.")))
 
@@ -180,39 +183,7 @@
  #:title "Git Commands"
  #:layout 'top
  (para
-  (tt "git-commit")
-  (blank)
-  (t "Record changes to the repository.")))
-
-(slide
- #:title "Git Commands"
- #:layout 'top
- (para
-  (tt "git-diff")
-  (blank)
-  (t "Show changes between commits, commit and working tree, etc.")))
-
-(slide
- #:title "Git Commands"
- #:layout 'top
- (para
-  (tt "git-log")
-  (blank)
-  (t "Show commit logs.")))
-
-(slide
- #:title "Git Commands"
- #:layout 'top
- (para
-  (tt "git-reset")
-  (blank)
-  (t "Reset current HEAD to the specified state.")))
-
-(slide
- #:title "Git Commands"
- #:layout 'top
- (para
-  (tt "git-status")
+  (tt "git status")
   (blank)
   (t "Show the working tree status.")))
 
@@ -220,73 +191,9 @@
  #:title "Git Commands"
  #:layout 'top
  (para
-  (tt "git-show")
+  (tt "git commit")
   (blank)
-  (t "Show various types of objects.")))
-
-(slide
- #:title "Git Commands"
- #:layout 'top
- (para
-  (tt "git-stash")
-  (blank)
-  (t "Stash the changes in a dirty working directory away.")))
-
-(slide
- #:title "Git Commands"
- #:layout 'top
- (para
-  (tt "git-pull")
-  (blank)
-  (t "Fetch from and merge with another repository or a local branch.")))
-
-(slide
- #:title "Git Commands"
- #:layout 'top
- (para
-  (tt "git-push")
-  (blank)
-  (t "Update remote refs along with associated objects.")))
-
-(slide
- #:title "Git Commands"
- #:layout 'top
- (para
-  (tt "git-fetch")
-  (blank)
-  (t "Download objects and refs from another repository.")))
-
-(slide
- #:title "Git Commands"
- #:layout 'top
- (para
-  (tt "git-branch")
-  (blank)
-  (t "List, create, or delete branches.")))
-
-(slide
- #:title "Git Commands"
- #:layout 'top
- (para
-  (tt "git-checkout")
-  (blank)
-  (t "Checkout a branch or paths to the working tree.")))
-
-(slide
- #:title "Git Commands"
- #:layout 'top
- (para
-  (tt "git-rm")
-  (blank)
-  (t "Remove files from the working tree and from the index.")))
-
-(slide
- #:title "Git Commands"
- #:layout 'top
- (para
-  (tt "git-tag")
-  (blank)
-  (t "Create, list, delete or verify a tag object signed with GPG.")))
+  (t "Record changes to the repository.")))
 
 (slide
  #:title "Git Commands"
@@ -300,15 +207,63 @@
  #:title "Git Commands"
  #:layout 'top
  (para
-  (tt "git-config")
+  (tt "git log")
   (blank)
-  (t "Get and set repository or global options.")))
+  (t "Show commit logs.")))
 
 (slide
  #:title "Git Commands"
  #:layout 'top
  (para
-  (tt "git-remote")
+  (tt "git clone")
+  (blank)
+  (t "Clone a repository into a new directory.")))
+
+(slide
+ #:title "Git Commands"
+ #:layout 'top
+ (para
+  (tt "git branch")
+  (blank)
+  (t "List, create, or delete branches.")))
+
+(slide
+ #:title "Git Commands"
+ #:layout 'top
+ (para
+  (tt "git checkout")
+  (blank)
+  (t "Checkout a branch or paths to the working tree.")))
+
+(slide
+ #:title "Git Commands"
+ #:layout 'top
+ (para
+  (tt "git push")
+  (blank)
+  (t "Update remote refs along with associated objects.")))
+
+(slide
+ #:title "Git Commands"
+ #:layout 'top
+ (para
+  (tt "git fetch")
+  (blank)
+  (t "Download objects and refs from another repository.")))
+
+(slide
+ #:title "Git Commands"
+ #:layout 'top
+ (para
+  (tt "git pull")
+  (blank)
+  (t "Fetch from and merge with another repository or a local branch.")))
+
+(slide
+ #:title "Git Commands"
+ #:layout 'top
+ (para
+  (tt "git remote")
   (blank)
   (t "manage set of tracked repositories.")))
 
@@ -316,23 +271,23 @@
  #:title "Git Commands"
  #:layout 'top
  (para
-  (tt "git-grep")
+  (tt "git stash")
   (blank)
-  (t "Print lines matching a pattern.")))
+  (t "Stash the changes in a dirty working directory away.")))
 
 (slide
  #:title "Git Commands"
  #:layout 'top
  (para
-  (tt "git-gui")
+  (tt "git diff")
   (blank)
-  (t "A portable graphical interface to Git.")))
+  (t "Show changes between commits, commit and working tree, etc.")))
 
 (slide
  #:title "Git Commands"
  #:layout 'top
  (para
-  (tt "git-clean")
+  (tt "git clean")
   (blank)
   (t "Remove untracked files from the working tree.")))
 
@@ -340,31 +295,7 @@
  #:title "Git Commands"
  #:layout 'top
  (para
-  (tt "git-fsck")
-  (blank)
-  (t "Verifies the connectivity and validity of the objects in the database.")))
-
-(slide
- #:title "Git Commands"
- #:layout 'top
- (para
-  (tt "git-gc")
-  (blank)
-  (t "Cleanup unnecessary files and optimize the local repository.")))
-
-(slide
- #:title "Git Commands"
- #:layout 'top
- (para
-  (tt "git-prune")
-  (blank)
-  (t "Prune all unreachable objects from the object database.")))
-
-(slide
- #:title "Git Commands"
- #:layout 'top
- (para
-  (tt "git-merge")
+  (tt "git merge")
   (blank)
   (t "Join two or more development histories together.")))
 
@@ -372,7 +303,7 @@
  #:title "Git Commands"
  #:layout 'top
  (para
-  (tt "git-rebase")
+  (tt "git rebase")
   (blank)
   (t "Forward-port local commits to the updated upstream head.")))
 
@@ -380,39 +311,47 @@
  #:title "Git Commands"
  #:layout 'top
  (para
-  (tt "git-cherry-pick")
+  (tt "git fsck")
   (blank)
-  (t "Apply the changes introduced by some existing commits.")))
+  (t "Verifies the connectivity and validity of the objects in the database.")))
 
 (slide
  #:title "Git Commands"
  #:layout 'top
  (para
-  (tt "git-bisect")
+  (tt "git gc")
   (blank)
-  (t "Find by binary search the change that introduced a bug.")))
+  (t "Cleanup unnecessary files and optimize the local repository.")))
 
 (slide
  #:title "Git Commands"
  #:layout 'top
  (para
-  (tt "git-format-patch")
+  (tt "git prune")
   (blank)
-  (t "Prepare patches for e-mail submission.")))
+  (t "Prune all unreachable objects from the object database.")))
 
 (slide
  #:title "Git Commands"
  #:layout 'top
  (para
-  (tt "git-am")
+  (tt "git tag")
   (blank)
-  (t "Apply a series of patches from a mailbox.")))
+  (t "Create, list, delete or verify a tag object signed with GPG.")))
 
 (slide
  #:title "Git Commands"
  #:layout 'top
  (para
-  (tt "git-blame")
+  (tt "git grep")
+  (blank)
+  (t "Print lines matching a pattern.")))
+
+(slide
+ #:title "Git Commands"
+ #:layout 'top
+ (para
+  (tt "git blame")
   (blank)
   (t "Show what revision and author last modified each line of a file.")))
 
@@ -420,7 +359,72 @@
  #:title "Git Commands"
  #:layout 'top
  (para
-  (tt "git-archive")
+  (tt "git gui")
+  (blank)
+  (t "A portable graphical interface to Git.")))
+
+
+(slide
+ #:title "Git Commands"
+ #:layout 'top
+ (para
+  (tt "git cherry-pick")
+  (blank)
+  (t "Apply the changes introduced by some existing commits.")))
+
+(slide
+ #:title "Git Commands"
+ #:layout 'top
+ (para
+  (tt "git bisect")
+  (blank)
+  (t "Find by binary search the change that introduced a bug.")))
+
+(slide
+ #:title "Git Commands"
+ #:layout 'top
+ (para
+  (tt "git show")
+  (blank)
+  (t "Show various types of objects.")))
+
+(slide
+ #:title "Git Commands"
+ #:layout 'top
+ (para
+  (tt "git format-patch")
+  (blank)
+  (t "Prepare patches for e-mail submission.")))
+
+(slide
+ #:title "Git Commands"
+ #:layout 'top
+ (para
+  (tt "git am")
+  (blank)
+  (t "Apply a series of patches from a mailbox.")))
+
+(slide
+ #:title "Git Commands"
+ #:layout 'top
+ (para
+  (tt "git reset")
+  (blank)
+  (t "Reset current HEAD to the specified state.")))
+
+(slide
+ #:title "Git Commands"
+ #:layout 'top
+ (para
+  (tt "git rm")
+  (blank)
+  (t "Remove files from the working tree and from the index.")))
+
+(slide
+ #:title "Git Commands"
+ #:layout 'top
+ (para
+  (tt "git archive")
   (blank)
   (t "Create an archive of files from a named tree.")))
 
@@ -428,7 +432,7 @@
  #:title "Git Commands"
  #:layout 'top
  (para
-  (tt "git-mv")
+  (tt "git mv")
   (blank)
   (t "Move or rename a file, a directory, or a symlink.")))
 
@@ -436,7 +440,7 @@
  #:title "Git Commands"
  #:layout 'top
  (para
-  (tt "git-revert")
+  (tt "git revert")
   (blank)
   (t "Revert some existing commits.")))
 
@@ -444,7 +448,7 @@
  #:title "Git Commands"
  #:layout 'top
  (para
-  (tt "git-shortlog")
+  (tt "git shortlog")
   (blank)
   (t "Summarize git log output.")))
 
