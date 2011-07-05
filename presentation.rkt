@@ -1,5 +1,7 @@
 #lang slideshow
-(require slideshow)
+(require openssl/sha1 ;;Required for sha1 example
+         slideshow
+         slideshow/code) 
 
 (define (plus . str)
   (item #:bullet (colorize (tt "+") "green")
@@ -88,7 +90,8 @@
 
 (slide
  #:title "Aside"
- (para "You don't have to just use git for source code"))
+ (para #:align 'center
+  "You don't have to just use git for source code"))
 
 (slide
  #:title "Types of code that I use git for:"
@@ -101,7 +104,7 @@
    (subitem "Appointments")
    (subitem "Notes")
    (subitem "Project management ")
-   (subitem "Time log(s)")
+   (subitem "Time logs")
    (subitem "Passwords")
    (subitem "Project Proposals")
    (subitem "Research papers")
@@ -139,6 +142,10 @@
  (plus "Commits")
  'next
  (plus "sha1")
+ 'next
+ (para 
+  (scale (code (sha1 (open-input-string "hello world"))) .75)
+  (scale (code "2aae6c35c94fcfb415dbe95f408b9ce91ee846ed") .75))
  'next
  (plus "diff & patch")
  'next
