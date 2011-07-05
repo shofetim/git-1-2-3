@@ -38,10 +38,10 @@
 (slide
  #:title "What is Git?"
  (para "Linus Torvolds wrote Git to solve a problem"
-       (item "All existing version control systems where broken")
-       (item "There where about 30,000 developers working on the kernel which"
+       (plus "All existing version control systems where broken")
+       (plus "There where about 30,000 developers working on the kernel which"
              "made other VCS painful to use ")
-       (item "He needed something that made his work faster")))
+       (plus "He needed something that made his work faster")))
 
 (slide
  (para #:align 'center
@@ -95,9 +95,9 @@
  'alts
  (list
   (list
-   (item "Ledger https://github.com/jwiegley/ledger"))
+   (plus "Ledger https://github.com/jwiegley/ledger"))
   (list
-   (item "Emacs Org mode http://orgmode.org/")
+   (plus "Emacs Org mode http://orgmode.org/")
    (subitem "Appointments")
    (subitem "Notes")
    (subitem "Project management ")
@@ -107,13 +107,13 @@
    (subitem "Research papers")
    (subitem "Code documentation"))
   (list
-   (item "Calendar http://www.roaringpenguin.com/products/remind"))
+   (plus "Calendar http://www.roaringpenguin.com/products/remind"))
   (list
-   (item "Diagrams http://ditaa.sourceforge.net/"))
+   (plus "Diagrams http://ditaa.sourceforge.net/"))
   (list
-   (item "Presentations http://docs.racket-lang.org/slideshow/index.html"))
+   (plus "Presentations http://docs.racket-lang.org/slideshow/index.html"))
   (list
-   (item "Just about everything else too"))))
+   (plus "Just about everything else too"))))
 
 (slide
  (t "2: Get Git"))
@@ -135,11 +135,20 @@
 
 (slide
  #:title "How it works"
- (item "diff & patch")
- (item "sha1")
- (item "working directory | index | repository")
- (bitmap "./images/3-areas.png"))
+ #:layout 'top
+ (plus "Commits")
+ 'next
+ (plus "sha1")
+ 'next
+ (plus "diff & patch")
+ 'next
+ (plus "working directory | index | repository"))
 
+(slide
+ (para #:align 'center
+       "That working directory | index | repository thing")
+ (blank)
+ (bitmap "./images/3-areas.png"))
 
 (slide
  (t "3: Try it out"))
@@ -338,17 +347,17 @@
 
 (slide
  #:title "Gotcha's"
- (item "Git tracks content, not files. ")
- (item ".gitignore")
- (item "git push (it does the right thing but)")
- (item "making commits/checkouts as root")
- (item "chmod'ing the hooks when you didn't mean too..."))
+ (plus "Git tracks content, not files. ")
+ (plus ".gitignore")
+ (plus "git push (it does the right thing but)")
+ (plus "making commits/checkouts as root")
+ (plus "chmod'ing the hooks when you didn't mean too..."))
 
 (slide
  #:title "Tools "
- (item "Github https://github.com/")
- (item "Deploy HQ http://www.deployhq.com/")
- (item "Gource http://code.google.com/p/gource/")
- (item "Gitosis")
+ (plus "Github https://github.com/")
+ (plus "Deploy HQ http://www.deployhq.com/")
+ (plus "Gource http://code.google.com/p/gource/")
+ (plus "Gitosis")
  (para "http://scie.nti.st/2007/11/14/"
        "hosting-git-repositories-the-easy-and-secure-way"))
